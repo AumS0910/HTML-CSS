@@ -53,3 +53,21 @@ button {
 button:hover {
     background-color: #ff2e44;
 }
+
+.about {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
