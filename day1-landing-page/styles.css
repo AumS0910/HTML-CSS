@@ -71,3 +71,141 @@ footer {
     text-align: center;
     padding: 15px 0;
 }
+
+
+.css-playground {
+    background: #f9fafb;
+    padding: 60px;
+    text-align: center;
+}
+
+.css-playground h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.box-model-card {
+    border: 5px solid #2563eb;
+    padding: 20px;
+    margin: 20px auto;
+    outline: 3px dashed #60a5fa;
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+}
+
+
+.text-demo {
+    margin-top: 40px;
+}
+
+.fancy-text {
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    color: #ef4444;
+}
+
+.lists-link-demo h3 {
+    margin-top: 20px;
+}
+
+.lists-link-demo ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: square;
+    display: inline-block;
+    text-align: left;
+}
+
+.lists-link-demo a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.lists-link-demo a:hover {
+    color: #1e40ef;
+    text-decoration: underline;
+}
+
+.table-demo table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+
+.table-demo th,
+.table-demo td {
+    border: 2px solid #d1d5db;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.flex-item {
+    background: #60a5fa;
+    color: white;
+    padding: 20px auto;
+    border-radius: 8px;
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.flex-item:hover {
+    transform: scale(1.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background: #10b981;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+@media (max-width 600px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 100px;
+    }
+}
+
+.box-model-card:hover {
+    transform: rotate(2deg) scale(1.05);
+}
+
+*box-sizing {
+    box-sizing: border-box;
+}
