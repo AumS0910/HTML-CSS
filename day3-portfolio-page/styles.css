@@ -150,68 +150,72 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
-.card h3 {
-    color: #1e293b;
-}
+.card:hover {
+    transform: translateY(-8px);
 
-.card a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #2563eb;
-    font-weight: 600;
-}
-
-/* CONTACT */
-.contact {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 450px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact input,
-.contact textarea {
-    padding: 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    font-family: inherit;
-}
-
-.contact button {
-    background: #2563eb;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.contact button:hover {
-    background: #1e40af;
-}
-
-/* FOOTER */
-footer {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
+    .card h3 {
+        color: #1e293b;
     }
-}
+
+    .card a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #2563eb;
+        font-weight: 600;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .contact form {
+        max-width: 450px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+        padding: 12px;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        font-family: inherit;
+    }
+
+    .contact button {
+        background: #2563eb;
+        color: white;
+        border: none;
+        padding: 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .contact button:hover {
+        background: #1e40af;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #0f172a;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        margin-top: 30px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+    }
