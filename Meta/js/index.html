@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            background-color: lightgreen;
+            position: relative;
+        }
+
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: cornsilk;
+            position: absolute;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="box"></div>
+    </div>
+    <br>
+    <button onclick="myMove()">Click here</button>
+    <script>
+        function myMove() {
+            let pos = 0;
+            const box = document.getElementById("box");
+            const id = setInterval(frame, 10);
+            function frame() {
+                if (pos == 300) {
+                    clearInterval(id);
+                }
+                pos++;
+                box.style.top = pos + "px";
+                box.style.left = pos + "px";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

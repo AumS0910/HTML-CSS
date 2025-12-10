@@ -155,6 +155,7 @@ header {
 
 .card:hover {
     transform: translateY(-8px);
+}
 
     .card h3 {
         color: #1e293b;
